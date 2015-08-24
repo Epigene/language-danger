@@ -1,16 +1,9 @@
-'scopeName': 'text.todo'
-'name': 'TODO'
+'scopeName': 'text.danger'
+'name': 'DANGER'
 'injectionSelector': 'comment, text.plain'
 'patterns': [
   {
-    'match': '(?<!\\w)@?(TODO|FIXME|CHANGED|XXX|IDEA|HACK|NOTE|REVIEW|NB)\\b'
-    'name': 'storage.type.class.${1:/downcase}'
-  }
-  {
-    'captures':
-      '1':
-        'name': 'markup.underline.link.radar'
-    'match': '<(ra?dar:/(?:/problems?|)/(?:[&0-9]+))>'
-    'name': 'storage.type.class.radar'
+    'match': '(?<!\\w)@?(WARNING|ALERT|DANGER|ERROR|BUG|FIX)\\b'
+    'name': 'storage.type.class.danger.${1:/downcase}'
   }
 ]

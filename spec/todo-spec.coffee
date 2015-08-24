@@ -3,11 +3,11 @@ describe "TODO grammar", ->
 
   beforeEach ->
     waitsForPromise ->
-      atom.packages.activatePackage("language-todo")
+      atom.packages.activatePackage("language-danger")
 
     runs ->
-      grammar = atom.grammars.grammarForScopeName("text.todo")
+      grammar = atom.grammars.grammarForScopeName("text.danger")
 
   it "parses the grammar", ->
     expect(grammar).toBeTruthy()
-    expect(grammar.scopeName).toBe "text.todo"
+    expect(grammar.scopeName).toBe "text.danger"
