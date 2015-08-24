@@ -1,6 +1,6 @@
 {
   "name": "language-danger",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "WARNING/ERROR highlighting support in Atom",
   "engines": {
     "atom": "*",
