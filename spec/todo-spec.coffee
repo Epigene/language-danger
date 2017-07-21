@@ -1,4 +1,4 @@
-describe "TODO grammar", ->
+describe "ERROR grammar", ->
   grammar = null
 
   beforeEach ->
